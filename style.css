@@ -1,4 +1,4 @@
 /*!
 Theme Name:   Codishop
-*/body{background-color:red}
+*/body{margin:0}header,main,footer{padding:5em}header{background-color:#eee}div.nav-container{height:3em;display:flex;align-items:center;justify-content:space-around}div.nav-container section.title h2{margin:0}div.nav-container nav div.menu-handheld-menu-container ul{display:flex;padding:0;margin:0}div.nav-container nav div.menu-handheld-menu-container ul li{text-transform:uppercase;list-style-type:none;padding:0 1em}div.nav-container nav div.menu-handheld-menu-container ul li a{text-decoration:none;color:#222}
 /*# sourceMappingURL=style.css.map */
