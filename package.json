@@ -1,0 +1,28 @@
+{
+  "name": "from-scratch-codishop",
+  "version": "1.0.0",
+  "description": "woocommerce from scratch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hermelen/woo-commerce-from-scratch.git"
+  },
+  "keywords": [
+    "woocomerce",
+    "from",
+    "scratch"
+  ],
+  "author": "hermelen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hermelen/woo-commerce-from-scratch/issues"
+  },
+  "homepage": "https://github.com/hermelen/woo-commerce-from-scratch#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.5.0",
+    "jquery": "^3.3.1"
+  }
+}
