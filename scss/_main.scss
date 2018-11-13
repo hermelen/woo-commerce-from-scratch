@@ -8,6 +8,7 @@ header, main, footer {
 }
 header {
   background-color: $grey;
+  position: absolute;
 }
 div.nav-container {
   height: 3em;
@@ -35,6 +36,18 @@ div.nav-container {
           }
         }
       }
+    }
+  }
+}
+
+section.slider-section {
+  div.div-slider {
+    position: relative;
+    img.attachment-post-thumbnail {
+    }
+    div.slider-description {
+      position: absolute;
+      top: 0;
     }
   }
 }
