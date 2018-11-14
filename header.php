@@ -23,5 +23,6 @@
         <?php get_template_part('template-parts/slider') ?>
     </header>
     <main class='site-content'>
+			<?php get_template_part('template-parts/belowheader') ?>
       <div class="container">
         <div class="row" id="catalog">

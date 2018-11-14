@@ -58,7 +58,8 @@ if ( woocommerce_product_loop() ) {
 	woocommerce_product_loop_start();
 
 	if ( wc_get_loop_prop( 'total' ) ) {
-		while ( have_posts() ) {
+		$i = 0;
+    while (have_posts() && $i < 6) :
 			the_post();
 
 			/**
@@ -69,7 +70,8 @@ if ( woocommerce_product_loop() ) {
 			do_action( 'woocommerce_shop_loop' );
 
 			wc_get_template_part( 'content', 'product' );
-		}
+      $i++;
+		endwhile;
 	}
 
 	woocommerce_product_loop_end();
