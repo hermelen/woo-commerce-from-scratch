@@ -34,6 +34,8 @@ function register_my_menus() {
 }
 add_action( 'init', 'register_my_menus' );
 
+remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
+
 
 
 
