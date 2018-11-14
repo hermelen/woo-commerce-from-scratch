@@ -1,33 +1,21 @@
 <?php
-$defaults = array(
-  // 'theme_location'  => ,
-  // 'menu'            => 'nav',
-  // 'container'       => 'div',
-  // 'container_class' => 'menu-container',
-  // 'container_id'    => ,
-  // 'menu_class'      => 'menu',
-  // 'menu_id'         => ,
-  'echo'            => true,
-  'fallback_cb'     => 'wp_page_menu',
-  // 'before'          => ,
-  // 'after'           => ,
-  // 'link_before'     => ,
-  // 'link_after'      => ,
-  'items_wrap'      => '<ul id=\"%1$s\" class=\"%2$s\">%3$s</ul>',
-  'depth'           => 0,
-  // 'walker'          =>
-);
-?>
-<div class="nav-container">
-	<section class="title">
-		<h2 class="header-h"><?php echo strtoupper(get_bloginfo('name')) ?></h1>
-	</section>
-	<nav>
-		<?php wp_nav_menu( $defaults ) ?>
-	</nav>
-	<section class="icons">
-		<i class="fas fa-shopping-basket"></i>
-		<i class="far fa-user"></i>
-		<i class="fas fa-search"></i>
-	</section>
-</div>
+  $args = array(
+         'taxonomy'     => 'product_cat',
+         'orderby'      => 'name',
+         'show_count'   => 0,
+         'pad_counts'   => 0,
+         'hierarchical' => 1,
+         'title_li'     => '',
+         'hide_empty'   => 1
+  );
+  $all_categories = get_categories( $args ); ?>
+  <div class="cat-div">
+    <ul class='cat-ul'>
+      <?php foreach ($all_categories as $cat) { ?>
+        <li><a href="/product-category/<?= $cat->slug ?>"><?= $cat->name ?></a></li>
+      <?php } ?>
+    </ul>
+    <ul class='cat-ul'>
+      <li><a href="/products/">Products</a></li>
+    </ul>
+  </div>

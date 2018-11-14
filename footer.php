@@ -9,41 +9,27 @@
 
 ?>
       </div>
+        <a class="show-all" href="/products/">Show All</a>
     </div>
   </main>
 	<footer id="footer">
     <div class="footer-div">
-      <h3>Quick links</h3>
-      <ul>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Careers</a></li>
-      </ul>
+      <h3>HELP</h3>
+      <?php get_template_part('template-parts/footer-menu') ?>
     </div>
     <div class="footer-div">
-      <h3>Contact us</h3>
-      <ul>
-        <li><i class="fab fa-twitter"></i><a href="#">@californiatheme</a></li>
-        <li><i class="fas fa-envelope"></i><a href="#">support@smallvictories.co</a></li>
-        <li><i class="fas fa-phone"></i><a href="#">+1 917 (123) 4567</a></li>
-      </ul>
+      <h3>ABOUT</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
-    <div class="footer-div">
-      <h3>Newsletter</h3>
+    <div class="footer-div newsletter">
+      <h3>NEWSLETTER</h3>
       <form>
         <label class="sr-only" for="inlineFormInput">Email</label>
-        <input type="text" class="" id="inlineFormInput" placeholder="Your email">
-        <button class="" type="submit">OK</button>
+        <input type="text" placeholder="Your email address">
+        <button class="" type="submit">Sign up</button>
       </form>
     </div>
-    <div class="footer-div">
-      <h3>Follow us</h3>
-      <ul>
-        <li><i class="fab fa-pinterest"></i><a href="#">Pinterest</a></li>
-        <li><i class="fab fa-instagram"></i><a href="#">Instagram</a></li>
-        <li><i class="fab fa-vimeo"></i><a href="#">Vimeo</a></li>
-      </ul>
-    </div>
+  </div>
 </footer>
 <?php wp_footer(); ?>
 </body>

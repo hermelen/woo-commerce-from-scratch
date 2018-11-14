@@ -1,7 +1,7 @@
 <?php
 $defaults = array(
   // 'theme_location'  => ,
-  // 'menu'            => 'nav',
+  'menu'            => 'nav',
   // 'container'       => 'div',
   // 'container_class' => 'menu-container',
   // 'container_id'    => ,
