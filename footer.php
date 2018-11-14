@@ -18,8 +18,11 @@
       <?php get_template_part('template-parts/footer-menu') ?>
     </div>
     <div class="footer-div">
-      <h3>ABOUT</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <?php $about_page = get_post(79); ?>
+      <a href="<?= $about_page->guid ?>">
+        <h3><?= strtoupper($about_page->post_title) ?></h3>
+        <p><?= substr($about_page->post_content, 0, 200) ?>...</p>
+      </a>
     </div>
     <div class="footer-div newsletter">
       <h3>NEWSLETTER</h3>

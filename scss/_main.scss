@@ -2,6 +2,7 @@
 
 $grey: #eaeff3;
 $fakeblack: #222222;
+$fakeblacklight: #878787;
 $pink: #f74462;
 
 $container-padding: 5em;
@@ -173,10 +174,13 @@ footer#footer {
       list-style: none;
       li {
         margin-bottom: 1em;
-        a {
-          color: $fakeblack;
-        }
       }
+    }
+    a {
+      color: $fakeblack;
+    }
+    a:hover {
+      color: $fakeblacklight;
     }
   }
   div.footer-div.newsletter {
