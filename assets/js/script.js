@@ -36,7 +36,7 @@ $(document).ready(function(){
   setTimeout(function(){
     containerHeight = $("div.div-slider").height();
     $('section.slider-section').height(containerHeight);
-  }, 0);
+  }, 10);
 
   $( window ).resize(function() {
     containerHeight = $("div.div-slider").height();
