@@ -1,15 +1,15 @@
 $grey: #eaeff3;
 $fakeblack: #222222;
+$pink: #f74462;
 body {
   margin: 0;
 }
-header, main, footer {
-  // padding: 5em;
-  width: 100%;
+header.main-header, main.site-content, footer#footer {
+  padding: 5em;
+  // width: 100%;
 }
-header {
+header.main-header {
   background-color: $grey;
-  // position: absolute;
 }
 div.nav-container {
   height: 3em;
@@ -104,6 +104,8 @@ ul.products.columns-1 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
   li.product {
     // display: flex;
     // flex-direction: column;
@@ -114,7 +116,12 @@ ul.products.columns-1 {
     a.woocommerce-LoopProduct-link {
       position: relative;
       span.onsale {
-        
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: $pink;
+        color: white;
+        padding: 0.5em;
       }
     }
   }

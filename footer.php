@@ -11,7 +11,7 @@
       </div>
     </div>
   </main>
-	<footer id="fooTer">
+	<footer id="footer">
     <div class="footer-div">
       <h3>Quick links</h3>
       <ul>
